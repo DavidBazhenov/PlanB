@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="bodywrapperrun">
+  <div class="title_process">
+    <h1 class="Welcome">
+      API
+    </h1>
+    <p class="text_welcome2">
+        {{ _('you can use api in your projects') }}
+    </p>
+  </div>
+  <div class="logos">
+    <div class="logopython"></div>
+    <div class="logocv">
+      <svg xmlns="http://www.w3.org/2000/svg" width="163" height="164" viewBox="0 0 163 164" fill="none">
+        <g clip-path="url(#clip0_132_153)">
+          <path d="M47.3228 26.3075C61.0795 0.389895 97.9315 -0.97011 113.497 23.8654C125.559 43.1107 117.889 66.9983 100.182 77.2822L88.6826 57.3642C95.727 53.273 98.7783 43.7699 93.9797 36.1135C87.7872 26.2333 73.1264 26.7743 67.6536 37.0851C63.6039 44.7148 66.8134 53.4966 73.4824 57.374L61.9743 77.3066C45.2108 67.5602 37.1431 45.486 47.3228 26.3075ZM53.4738 119.716C53.4599 127.445 47.4457 134.647 38.7997 134.966C27.1344 135.396 19.3518 122.979 24.8246 112.668C29.0562 104.696 38.7783 102.57 45.8341 106.58L57.3639 86.61C39.6236 76.4865 15.1416 81.83 4.49379 101.891C-9.26289 127.808 10.2998 159.021 39.6222 157.939C61.3144 157.138 76.4166 139.103 76.5077 119.716H53.4738ZM143.808 86.6981L132.308 106.616C139.376 110.696 142.445 120.218 137.639 127.886C131.446 137.767 116.786 137.226 111.313 126.915C107.256 119.272 110.483 110.474 117.175 106.607L105.667 86.6738C88.8809 96.4102 80.7954 118.501 90.9819 137.692C104.739 163.61 141.591 164.97 157.156 140.135C169.226 120.877 161.539 96.9712 143.808 86.6981Z" fill="black"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_132_153">
+            <rect width="163" height="163" fill="white" transform="translate(0 0.5)"/>
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+    <div class="logotesseract"></div>
+  </div>
+  <p class="text_welcome2">
+      {{ _('When creating this API the following were used:<br> python flask, Tesseract, OpenCV') }}
+  </p>
+  <h1 class="title4">
+    {{ _('Structure of <span class="orange">POST</span> requests') }}
+  </h1>
+    <pre>
+
+        <code>
+<span class="orangecode">import</span> requests
+
+requests.post(<span class="red">url</span>=<span class="green">"http://photototext.com/api"</span>, <span class="red">json</span>={<span class="green">"img"</span>: string})
+        </code>
+    </pre>
+    <p class="text_welcome2">
+      {{ _('In this case, <span class="orangecode">img</span> is an image encoded in base64 format.') }}
+    </p>
+    <h1 class="title4">
+      {{ _('An example of using the <span class="orange">API</span><br> in <span class="orange">Python</span> code') }}
+    </h1>
+    <pre>
+        <code>
+<span class="orangecode"></span>import requests
+<span class="orangecode"></span>import base64
+
+<span class="orangecode">with</span> <span class="fiol">open</span>(<span class="green">'images/2.jpg'</span>, <span class="green">'rb'</span>) <span class="orangecode">as</span> image_file:
+    string = base64.b64encode(image_file.read()).decode('utf-8')
+
+url = <span class="green">"http://photototext.com/api"</span>
+res = requests.post(<span class="red">url</span>=url, <span class="red">json</span>={<span class="green">"img"</span>: string})
+
+<span class="fiol">print</span>(res.json())
+        </code>
+    </pre>
+</div>
+
+
+{% endblock %}

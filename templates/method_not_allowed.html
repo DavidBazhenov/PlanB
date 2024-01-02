@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="bodywrapperrun">
+  <h1 class="titledocs">
+    You do not have permission to access this page...
+  </h1>
+  <h2 class="title3docs">
+    Login to gain access
+  </h2>
+  <img class="gifimg" src="{{ url_for('static', filename='denied.gif') }}" alt="error"  style="text-align: center;" >
+
+</div>
+
+
+
+{% endblock %}

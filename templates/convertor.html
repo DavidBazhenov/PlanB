@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="bodywrapperrun">
+  <div class="title_process">
+    <h1 class="Welcome">
+        {{ _('File reader') }}
+    </h1>
+    <p class="text_welcome2">
+      {{ _('Select file to process') }}
+    </p>
+  </div>
+  <form  class="bodywrapperrun" method='POST' enctype='multipart/form-data'>
+      <div class="label1">
+          {{ form.hidden_tag() }}
+      </div>
+      <label class="label" for="fileInput">
+            {{ _('Click to select file') }}
+      </label>
+      {{ form.file(id="fileInput",class="label2") }}
+      <div class="output">
+          {% if change_style %}
+            <style>
+                .output {
+                    width: auto;
+                    height: auto;
+                }
+                .title3 {
+                    width: 785px;
+                    height: auto;
+                    font-size: 1.4rem;
+                    font-style: normal;
+                    font-weight: 500;
+                }
+            </style>
+          {% endif %}
+          <div class="title3">
+            {{ text }}
+          </div>
+    </div>
+    <div class="buttons">
+      <a href="#!" class="Button_link">
+          <form method='POST' enctype='multipart/form-data'>
+              {{ form.submit(class="button1") }}
+          </form>
+      </a>
+      <a href="/tryapi" class="Button_link">
+        <div class="button2">
+          {{ _('Try API') }}
+        </div>
+      </a>
+    </div>
+  </form>
+</div>
+
+
+{% endblock %}
+
+{% block script %}
+<script src="{{url_for('static', filename='script.js')}}"></script>
+{% endblock %}

@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="bodywrapperrun">
+  <h1 class="titledocs">
+    Text Extraction from Images using Tesseract OCR and Image Preprocessing
+  </h1>
+  <h3 class="title3docs">
+    {{ _('1. Introduction:') }}
+  </h3>
+  <p class="articleclassic">
+      {{ _('&emsp;Text extraction from images is a common task in computer vision and document processing. Tesseract OCR, a powerful open-source OCR engine, provides the foundation for this script. Additionally, image preprocessing steps are incorporated to improve the quality of text recognition.') }}
+  </p>
+  <h3 class="title3docs">
+    {{ _('2. Image Preprocessing:') }}
+  </h3>
+  <p class="articleclassic">
+    {{ _('<span class="bold">2.1 Grayscale Conversion:</span><br>&emsp;The script begins by converting the input image to grayscale using Opencv cvtColor function. Grayscale images simplify subsequent processing steps. ') }}
+  </p>
+  <pre class="docsmanual">
+      <code>
+<span class="orangecode">import</span> cv2
+<span class="orangecode">import</span> pytesseract
+<span class="orangecode">import</span> numpy <span class="orangecode">as</span> np
+
+<span class="orangecode">def</span> <span class="fiol">grayscale</span>(image):
+    return cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+      </code>
+  </pre>
+  <p class="articleclassic">
+      {{ _('<span class="bold">2.2 Skew Correction:</span><br>&emsp;Skewness in images can negatively impact OCR accuracy. The getSkewAngle function detects the skew angle and rotate Image corrects it. The process involves thresholding, contour detection, and finding the minimum area rectangle to determine the angle. ') }}
+  </p>
+  <pre class="docsmanual">
+      <code>
+<span class="orangecode">def</span> <span class="fiol">getSkewAngle</span>(cvImage) -> float:
+    # ... (skew correction code)
+      </code>
+  </pre>
+  <p class="articleclassic">
+      {{ _('<span class="bold">2.3 Noise Removal:</span><br><br>&emsp;Noise in images can interfere with OCR. The noise_removal function employs morphological operations to reduce noise, enhancing the clarity of the text.') }}
+  </p>
+  <pre class="docsmanual">
+      <code>
+<span class="orangecode">def</span> <span class="fiol">noise_removal</span>(image):
+    # ... (noise removal code)
+      </code>
+  </pre>
+  <p class="articleclassic">
+      {{ _('<span class="bold">2.4 Font Thickening:</span><br><br>&emsp;Thickening the text can improve OCR results, especially for characters with low contrast. The thick_font function utilizes dilation to achieve this effect. ') }}
+  </p>
+  <pre class="docsmanual">
+      <code>
+<span class="orangecode">def</span> <span class="fiol">thick_font</span>(image):
+    # ... (font thickening code)
+      </code>
+  </pre>
+  <h3 class="title3docs">
+    {{ _('3. Text Extraction using Tesseract OCR:') }}
+  </h3>
+  <p class="articleclassic">
+      {{ _('&emsp;The core of the script lies in the img_to_text function, which orchestrates the image preprocessing steps and leverages Tesseract OCR for text extraction.') }}
+  </p>
+  <pre class="docsmanual">
+      <code>
+<span class="orangecode">def</span> <span class="fiol">img_to_text</span>(lang, img):
+    # ... (img_to_text code)
+      </code>
+  </pre>
+  <h3 class="title3docs">
+    {{ _('4. Conclusion:') }}
+  </h3>
+  <p class="articleclassic">
+      {{ _('&emsp;This script offers a comprehensive solution for text extraction from images. By integrating Tesseract OCR with image preprocessing techniques, it addresses common challenges associated with OCR, making it suitable for a variety of applications, including document digitization and text recognition in images. Users can easily adapt the script for their specific needs, adjusting parameters or combining it with additional image processing methods.') }}
+  </p>
+</div>
+
+
+
+{% endblock %}

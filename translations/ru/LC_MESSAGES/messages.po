@@ -1,0 +1,214 @@
+# Russian translations for PROJECT.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-12-18 23:49+0300\n"
+"PO-Revision-Date: 2023-12-18 23:50+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: templates/api.html:9
+msgid "you can use api in your projects"
+msgstr "вы можете использовать api в своих проектах"
+
+#: templates/api.html:29
+msgid ""
+"When creating this API the following were used:<br> python flask, "
+"Tesseract, OpenCV"
+msgstr ""
+"При создании API использовался следующий стек:<br> python flask, "
+"Tesseract, OpenCV"
+
+#: templates/api.html:32
+msgid "Structure of <span class=\"orange\">POST</span> requests"
+msgstr "Структура <span class=\"orange\">POST</span> запросов"
+
+#: templates/api.html:42
+msgid ""
+"In this case, <span class=\"orangecode\">img</span> is an image encoded "
+"in base64 format."
+msgstr ""
+"В данном случае <span class=\"orangecode\">img</span> - это изображение, закодированное "
+"в формате base64."
+
+#: templates/api.html:45
+msgid ""
+"An example of using the <span class=\"orange\">API</span><br> in <span "
+"class=\"orange\">Python</span> code"
+msgstr ""
+"Пример использования <span class=\"orange\">API</span><br> в коде <span "
+"class=\"orange\">Python</span>"
+
+#: templates/base.html:27
+msgid "HOME"
+msgstr "ГЛАВНАЯ СТРАНИЦА"
+
+#: templates/base.html:30
+msgid "DOCS"
+msgstr "ДОКУМЕНТАЦИЯ"
+
+#: templates/base.html:33
+msgid "API"
+msgstr "API"
+
+#: templates/base.html:36
+msgid "TRY ONLINE"
+msgstr "API ОНЛАЙН"
+
+#: templates/convertor.html:6
+msgid "File reader"
+msgstr "API ФОТО"
+
+#: templates/convertor.html:9
+msgid "Select file to process"
+msgstr "Выберите файл для обработки"
+
+#: templates/convertor.html:17
+msgid "Click to select file"
+msgstr "Нажмите, чтобы выбрать файл"
+
+#: templates/convertor.html:48
+msgid "Try API"
+msgstr "API"
+
+#: templates/docs.html:8
+msgid "1. Introduction:"
+msgstr "1. Введение:"
+
+#: templates/docs.html:11
+msgid ""
+"&emsp;Text extraction from images is a common task in computer vision and"
+" document processing. Tesseract OCR, a powerful open-source OCR engine, "
+"provides the foundation for this script. Additionally, image "
+"preprocessing steps are incorporated to improve the quality of text "
+"recognition."
+msgstr ""
+"&emsp;Извлечение текста из изображений является распространенной задачей в компьютерном зрении и"
+" обработке документов. Tesseract OCR, мощный механизм распознавания текста с открытым исходным кодом, "
+"обеспечивает основу для этого скрипта. Кроме того, изображение "
+"для улучшения качества текста включены этапы предварительной обработки "
+"распознавание."
+
+#: templates/docs.html:14
+msgid "2. Image Preprocessing:"
+msgstr "2. Предварительная обработка изображения:"
+
+#: templates/docs.html:17
+msgid ""
+"<span class=\"bold\">2.1 Grayscale Conversion:</span><br>&emsp;The script"
+" begins by converting the input image to grayscale using Opencv cvtColor "
+"function. Grayscale images simplify subsequent processing steps. "
+msgstr ""
+"<span class=\"bold\">2.1 Преобразование оттенков серого:</span><br>&emsp;Сценарий"
+" начинается с преобразования входного изображения в оттенки серого с помощью функции Opencv cvtColor. "
+" Изображения в оттенках серого упрощают последующие этапы обработки. "
+
+#: templates/docs.html:32
+msgid ""
+"<span class=\"bold\">2.2 Skew Correction:</span><br>&emsp;Skewness in "
+"images can negatively impact OCR accuracy. The getSkewAngle function "
+"detects the skew angle and rotate Image corrects it. The process involves"
+" thresholding, contour detection, and finding the minimum area rectangle "
+"to determine the angle. "
+msgstr ""
+"<span class=\"bold\">2.2 Исправление перекоса:</span><br>&emsp;Перекос в "
+"изображениях может негативно повлиять на точность распознавания. Функция getSkewAngle "
+"определяет угол наклона и корректирует его поворотом изображения. Процесс включает в себя"
+" установление порогового значения, определение контура и нахождение прямоугольника минимальной площади "
+"для определения угла."
+
+#: templates/docs.html:41
+msgid ""
+"<span class=\"bold\">2.3 Noise Removal:</span><br><br>&emsp;Noise in "
+"images can interfere with OCR. The noise_removal function employs "
+"morphological operations to reduce noise, enhancing the clarity of the "
+"text."
+msgstr ""
+"<span class=\"bold\">2.3 Удаление шума:</span><br><br>&emsp;Шум в "
+"изображениях может мешать распознаванию текста. Функция noise_removal использует "
+"морфологические операции для уменьшения шума, повышения четкости "
+"текста."
+
+#: templates/docs.html:50
+msgid ""
+"<span class=\"bold\">2.4 Font Thickening:</span><br><br>&emsp;Thickening "
+"the text can improve OCR results, especially for characters with low "
+"contrast. The thick_font function utilizes dilation to achieve this "
+"effect. "
+msgstr ""
+"<span class=\"bold\">2.4 Утолщение шрифта:</span><br><br>&emsp;Утолщение "
+"текст может улучшить результаты распознавания, особенно для символов с низкой контрастностью. "
+" Функция thick_font использует расширение для достижения этого эффекта."
+
+#: templates/docs.html:59
+msgid "3. Text Extraction using Tesseract OCR:"
+msgstr "3. Извлечение текста с помощью Tesseract OCR:"
+
+#: templates/docs.html:62
+msgid ""
+"&emsp;The core of the script lies in the img_to_text function, which "
+"orchestrates the image preprocessing steps and leverages Tesseract OCR "
+"for text extraction."
+msgstr ""
+"&emsp;Ядро скрипта лежит в функции img_to_text, которая "
+"управляет этапами предварительной обработки изображений и использует Tesseract OCR "
+"для извлечения текста"
+
+#: templates/docs.html:71
+msgid "4. Conclusion:"
+msgstr "4. Заключение:"
+
+#: templates/docs.html:74
+msgid ""
+"&emsp;This script offers a comprehensive solution for text extraction "
+"from images. By integrating Tesseract OCR with image preprocessing "
+"techniques, it addresses common challenges associated with OCR, making it"
+" suitable for a variety of applications, including document digitization "
+"and text recognition in images. Users can easily adapt the script for "
+"their specific needs, adjusting parameters or combining it with "
+"additional image processing methods."
+msgstr ""
+"&emsp;Этот скрипт предлагает комплексное решение для извлечения текста "
+"из изображений. Интегрируя Tesseract OCR с методами предварительной обработки изображений "
+", он решает общие проблемы, связанные с распознаванием текста, что делает его"
+" подходит для различных приложений, включая оцифровку документов "
+"и распознавание текста на изображениях. Пользователи могут легко адаптировать скрипт к "
+"своим конкретным потребностям, регулируя параметры или комбинируя его с "
+"дополнительными методами обработки изображений."
+
+#: templates/main.html:6
+msgid "Welcome"
+msgstr "Добро пожаловать"
+
+#: templates/main.html:9
+msgid ""
+"Unlock the power of extracting text from images with our state-of-the-art"
+" PhotoToText API. Seamlessly integrate our API into your applications, "
+"websites, or services to effortlessly convert text embedded in images "
+"into machine-readable data."
+msgstr ""
+"Раскройте возможности распознования текста из изображений с помощью нашего"
+" API. Вы можете легко интегрировать API в свои приложения, "
+"веб-сайты или сервисы, чтобы без особых усилий преобразовать изображения, в текст"
+"в машиночитаемые данные."
+
+#: templates/main.html:14
+msgid "Get Started"
+msgstr "API"
+
+#: templates/main.html:19
+msgid "Try Online"
+msgstr "Приступить"
+

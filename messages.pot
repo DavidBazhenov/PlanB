@@ -1,0 +1,172 @@
+# Translations template for PROJECT.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-12-18 23:57+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: templates/api.html:9
+msgid "you can use api in your projects"
+msgstr ""
+
+#: templates/api.html:29
+msgid ""
+"When creating this API the following were used:<br> python flask, "
+"Tesseract, OpenCV"
+msgstr ""
+
+#: templates/api.html:32
+msgid "Structure of <span class=\"orange\">POST</span> requests"
+msgstr ""
+
+#: templates/api.html:42
+msgid ""
+"In this case, <span class=\"orangecode\">img</span> is an image encoded "
+"in base64 format."
+msgstr ""
+
+#: templates/api.html:45
+msgid ""
+"An example of using the <span class=\"orange\">API</span><br> in <span "
+"class=\"orange\">Python</span> code"
+msgstr ""
+
+#: templates/base.html:27
+msgid "HOME"
+msgstr ""
+
+#: templates/base.html:30
+msgid "DOCS"
+msgstr ""
+
+#: templates/base.html:33
+msgid "API"
+msgstr ""
+
+#: templates/base.html:36
+msgid "TRY ONLINE"
+msgstr ""
+
+#: templates/convertor.html:6
+msgid "File reader"
+msgstr ""
+
+#: templates/convertor.html:9
+msgid "Select file to process"
+msgstr ""
+
+#: templates/convertor.html:17
+msgid "Click to select file"
+msgstr ""
+
+#: templates/convertor.html:48
+msgid "Try API"
+msgstr ""
+
+#: templates/docs.html:8
+msgid "1. Introduction:"
+msgstr ""
+
+#: templates/docs.html:11
+msgid ""
+"&emsp;Text extraction from images is a common task in computer vision and"
+" document processing. Tesseract OCR, a powerful open-source OCR engine, "
+"provides the foundation for this script. Additionally, image "
+"preprocessing steps are incorporated to improve the quality of text "
+"recognition."
+msgstr ""
+
+#: templates/docs.html:14
+msgid "2. Image Preprocessing:"
+msgstr ""
+
+#: templates/docs.html:17
+msgid ""
+"<span class=\"bold\">2.1 Grayscale Conversion:</span><br>&emsp;The script"
+" begins by converting the input image to grayscale using Opencv cvtColor "
+"function. Grayscale images simplify subsequent processing steps. "
+msgstr ""
+
+#: templates/docs.html:32
+msgid ""
+"<span class=\"bold\">2.2 Skew Correction:</span><br>&emsp;Skewness in "
+"images can negatively impact OCR accuracy. The getSkewAngle function "
+"detects the skew angle and rotate Image corrects it. The process involves"
+" thresholding, contour detection, and finding the minimum area rectangle "
+"to determine the angle. "
+msgstr ""
+
+#: templates/docs.html:41
+msgid ""
+"<span class=\"bold\">2.3 Noise Removal:</span><br><br>&emsp;Noise in "
+"images can interfere with OCR. The noise_removal function employs "
+"morphological operations to reduce noise, enhancing the clarity of the "
+"text."
+msgstr ""
+
+#: templates/docs.html:50
+msgid ""
+"<span class=\"bold\">2.4 Font Thickening:</span><br><br>&emsp;Thickening "
+"the text can improve OCR results, especially for characters with low "
+"contrast. The thick_font function utilizes dilation to achieve this "
+"effect. "
+msgstr ""
+
+#: templates/docs.html:59
+msgid "3. Text Extraction using Tesseract OCR:"
+msgstr ""
+
+#: templates/docs.html:62
+msgid ""
+"&emsp;The core of the script lies in the img_to_text function, which "
+"orchestrates the image preprocessing steps and leverages Tesseract OCR "
+"for text extraction."
+msgstr ""
+
+#: templates/docs.html:71
+msgid "4. Conclusion:"
+msgstr ""
+
+#: templates/docs.html:74
+msgid ""
+"&emsp;This script offers a comprehensive solution for text extraction "
+"from images. By integrating Tesseract OCR with image preprocessing "
+"techniques, it addresses common challenges associated with OCR, making it"
+" suitable for a variety of applications, including document digitization "
+"and text recognition in images. Users can easily adapt the script for "
+"their specific needs, adjusting parameters or combining it with "
+"additional image processing methods."
+msgstr ""
+
+#: templates/main.html:6
+msgid "Welcome"
+msgstr ""
+
+#: templates/main.html:9
+msgid ""
+"Unlock the power of extracting text from images with our state-of-the-art"
+" PhotoToText API. Seamlessly integrate our API into your applications, "
+"websites, or services to effortlessly convert text embedded in images "
+"into machine-readable data."
+msgstr ""
+
+#: templates/main.html:14
+msgid "Get Started"
+msgstr ""
+
+#: templates/main.html:19
+msgid "Try Online"
+msgstr ""
+

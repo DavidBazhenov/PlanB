@@ -1,0 +1,653 @@
+ html {
+     box-sizing: border-box;
+     overflow-x: hidden;
+ }
+
+ *,
+ *::before,
+ *::after {
+     box-sizing: inherit;
+ }
+
+ @media (min-width: 2900px) {
+     header_item {
+         font-size: 50px;
+     }
+ }
+
+ .main {
+     display: flex;
+     height: 100%;
+     margin: 20px;
+     flex-direction: column;
+ }
+
+.noselect {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* стандарт */
+}
+
+ /*Header start*/
+ .header_wrapper {
+     height: 11vh;
+     display: flex;
+     padding: 0px 0px;
+     justify-content: space-between;
+     align-items: center;
+     gap: 36px;
+
+ }
+
+ .header_logo {
+     display: flex;
+     width: auto;
+     height: auto;
+     padding: 24px 384.5px 23px 40px;
+     align-items: center;
+ }
+
+ .header_list {
+     display: flex;
+     width: auto;
+     min-width: 657px;
+     height: auto;
+     padding: 0px 40px 0px 0px;
+     justify-content: center;
+     align-items: center;
+     align-content: center;
+     gap: 0px 58px;
+     flex-wrap: wrap;
+ }
+
+ .header_item {
+     color: #000;
+     text-align: center;
+     font-family: 'Rhodium Libre', serif;
+     font-size: 27px;
+     font-style: normal;
+     line-height: normal;
+ }
+ .lang{
+     width: 40px;
+     height: 24px;
+     flex-shrink: 0;
+     background: url('/static/engl.png'), white 50% / cover no-repeat;;
+ }
+ .header_link {
+     color: #000000;
+     font-family: 'Rhodium Libre', serif;
+     font-size: 2.9vh;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     text-decoration: none;
+ }
+
+ .header_link:hover {
+     color: #212121;
+     text-shadow: .6px 0px 0px #212121, -.6px 0px 0px #212121;
+ }
+
+ .logotip {
+     width: 6vw;
+     height: 6vh;
+ }
+
+ .header_logo-link {
+     color: #000000;
+     font-family: 'Rhodium Libre', serif;
+     font-size: 32px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     text-decoration: none;
+ }
+
+ /*-------------------------------------------------*/
+ .bodywrapper {
+     display: flex;
+     height: 80vh;
+     padding: 0px 120px;
+     justify-content: center;
+     align-items: center;
+     gap: 59px;
+ }
+.gifimg {
+    width: 60%;
+    height: auto; /* Это позволяет сохранять пропорции изображения */
+ }
+ .bodywrapperrun {
+     display: flex;
+     padding: 0px 124px;
+     padding-bottom: 124px;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 30px;
+ }
+
+ .Welcome_block {
+     display: flex;
+     padding: 152px 0px 210px 122px;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+     gap: 48px;
+     align-self: stretch;
+ }
+
+ .photo_block {
+     display: flex;
+     width: 300px;
+     height: 322px;
+     padding-bottom: 50px;
+     flex-direction: column;
+     align-items: center;
+     gap: 16px;
+     flex-shrink: 0;
+ }
+
+ .Welcome {
+     color: #000;
+     text-align: center;
+     font-family: 'Rhodium Libre', serif;
+     font-size: 6rem;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+     letter-spacing: -0.12rem;
+     height: 130px;
+
+ }
+
+ .text_welcome {
+     width: 730px;
+     height: 148px;
+     color: #000;
+     font-family: 'Rhodium Libre', serif;
+     font-size: 1.5rem;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+     letter-spacing: -0.03rem;
+ }
+
+ .text_welcome2 {
+     color: #000;
+     font-family: 'Rhodium Libre', serif;
+     font-size: 1.5rem;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+     letter-spacing: -0.03rem;
+     text-align: center;
+ }
+
+ .label2 {
+     border: 4px solid #000;
+     background: #F0F0F0;
+     display: flex;
+     width: 1193px;
+     padding: 63px 401px 80px 399px;
+     justify-content: center;
+     align-items: center;
+     transition: 0.5s ease-in-out;
+ }
+
+ #fileInput {
+     opacity: 0;
+     position: absolute;
+     z-index: -1;
+ }
+
+ label {
+     cursor: pointer;
+     background: #191919;
+     display: flex;
+     padding: 17px 46px;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+     color: #FFF;
+     font-family: 'Rhodium Libre';
+     font-size: 1.5rem;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+     letter-spacing: -0.03rem;
+     transition: 0.3s ease-in-out;
+ }
+
+ .label:hover {
+     scale: 102%;
+ }
+
+ .title_process {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .hero {
+     width: 100%;
+     min-height: 100vh;
+     background: #FFFFFF;
+     display: flex;
+     align-content: center;
+     justify-content: center;
+
+ }
+
+ #drop-area {
+     width: 500px;
+     height: 300px;
+     padding: 30px;
+     background: #fff;
+     text-align: center;
+     border-radius: 20px;
+
+ }
+
+ #img-view {
+     width: 100%;
+     height: 100%;
+     border-radius: 20px;
+     border: 2px dashed #bbb5ff;
+     background: #f7f8ff;
+ }
+
+ #img-view img {
+     width: 100px;
+     margin-top: 25px;
+ }
+
+ #img-view span {
+     display: block;
+     font-size: 12px;
+     color: #777;
+     margin-top: 15px;
+ }
+
+
+ .dragndrop {
+     border: 4px solid #000;
+     background: #F0F0F0;
+     display: flex;
+     width: 1193px;
+     padding: 63px 401px 80px 399px;
+     justify-content: center;
+     align-items: center;
+     transition: 0.5s ease-in-out;
+
+ }
+
+ .dragndrop:hover {
+     scale: 102%;
+ }
+
+ .output {
+     border: 4px solid #000;
+     background: #F0F0F0;
+     display: flex;
+     width: 1193px;
+     height: 227px;
+     padding: 60px 25px 61px 25px;
+     justify-content: center;
+     align-items: center;
+     flex-shrink: 0;
+     transition: 0.5s ease-in-out;
+ }
+
+ .output:hover {
+     scale: 102%;
+ }
+ button{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: inherit;
+    /* Дополнительные свойства, чтобы убрать другие возможные стили */
+    text-decoration: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+ }
+ .buttons {
+     width: 479px;
+     height: 66px;
+     display: flex;
+     flex-direction: row;
+     gap: 48px;
+ }
+
+ .button1 {
+     background: #191919;
+     display: flex;
+     width: 230px;
+     padding: 17px 46px;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+     color: #FFF;
+
+     font-family: 'Rhodium Libre', serif;
+     font-size: 1.5rem;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+     letter-spacing: -0.03rem;
+     transition: 0.3s ease-in-out;
+ }
+
+ .button1:hover {
+     scale: 102%;
+ }
+
+ .button2 {
+     border: 3px solid #000;
+     background: #F0F0F0;
+     display: flex;
+     width: 230px;
+     padding: 15px 46px;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+     color: #000;
+     font-family: 'Rhodium Libre', serif;
+     font-size: 1.5rem;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+     letter-spacing: -0.03rem;
+     transition: 0.3s ease-in-out;
+ }
+
+ .button2:hover {
+     scale: 102%;
+ }
+
+ .Button_link {
+     text-decoration: none;
+ }
+
+ .title2 {
+     width: 393px;
+     height: 84px;
+     flex-shrink: 0;
+     color: #000;
+     text-align: center;
+     font-family: 'Rhodium Libre';
+     font-size: 4rem;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+     letter-spacing: -0.08rem;
+ }
+
+ .title3 {
+     width: 350px;
+     height: 106px;
+     flex-shrink: 0;
+     color: #000;
+     text-align: left;
+     font-family: 'Rhodium Libre';
+     font-size: 2.5rem;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+     letter-spacing: -0.05rem;
+ }
+
+ .title4 {
+    color: #000;
+    text-align: center;
+    font-family: Rhodium Libre;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.08rem;
+ }
+ .fiol{
+    color: #8754C7;
+    font-family: 'Consolas';
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.035rem;
+ }
+ .orange {
+     color: #C28936;
+     font-family: 'Rhodium Libre';
+     font-size: 3rem;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     letter-spacing: -0.08rem;
+ }
+
+ pre {
+     border-radius: 20px;
+     background: #2E2F2D;
+     display: flex;
+     padding: 37px 43px;
+     gap: 10px;
+ }
+ .docsmanual{
+     display: flex;
+     width: 840px;
+     padding: 37px 43px;
+     gap: 10px;
+     border-radius: 20px;
+     background: #2E2F2D;
+ }
+
+ code {
+     color: #FFF;
+     font-family: Consolas;
+     font-size: 1.75rem;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     letter-spacing: -0.035rem;
+ }
+
+ .red {
+     color: #9D4224;
+ }
+
+ .orangecode {
+     color: #C28936;
+ }
+
+ .green {
+     color: #658155;
+ }
+
+ .logos {
+     display: flex;
+     width: 678px;
+     padding: 0px 258px;
+     justify-content: center;
+     align-items: center;
+     gap: 46px;
+ }
+
+ .logocv {
+     width: 163px;
+     height: 163px;
+     flex-shrink: 0;
+ }
+
+ .logotesseract {
+     width: 234px;
+     height: 213px;
+     flex-shrink: 0;
+     background: url('/static/tesseract.png'), white 50% / cover no-repeat;
+     margin: -24px;
+ }
+
+ .logopython {
+     width: 160px;
+     height: 160px;
+     flex-shrink: 0;
+     background: url('/static/python.png'), white 50% / cover no-repeat;
+ }
+ .titledocs{
+    width: 1128px;
+    height: 100px;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: 'Rhodium Libre';
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.05rem;
+ }
+ .title3docs{
+    color: #000;
+    font-family: 'Rhodium Libre';
+    font-size: 2.1875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.04375rem;
+ }
+ .articleclassic{
+    width: 1132px;
+    height: auto;
+    flex-shrink: 0;
+    color: #000;
+    font-family: 'Rhodium Libre';
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.035rem;
+ }
+ .bold{
+    font-weight: 700;
+ }
+
+ .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    display:flex;
+    flex-direction: column;
+    position: fixed;
+    top: 22vh;
+    left: 30vw;
+    background: #191919 ;
+    padding: 30px;
+    height: 50vh;
+    width: 40vw;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background: #191919;
+    text-align: right;
+    transition: 0.2s;
+}
+.big{
+    height: 62vh;
+    max-height:70vh
+}
+.modal-close {
+    cursor: pointer;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+}
+.form {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Rhodium Libre', serif;
+    vertical-align: baseline;
+    gap: 5px;
+    padding-bottom: 50px;
+    transition:0.2s;
+}
+.inputplace::placeholder{
+    color: #F0F0F0;
+}
+.inputplace {
+    width: 100%;
+    padding: 10px;
+    font-size: 130%;
+    border-radius: 11px;
+    border: 3px solid #F0F0F0;
+    background: #191919;
+    color: #F0F0F0;
+
+}
+.whiteColor{
+    color: #F0F0F0;
+    font-size: 5rem;
+}
+.inputform{
+     display: flex;
+     width: 75%;
+     margin-top: 20px;
+     align-items: center;
+     gap: 20px;
+     flex-direction: row;
+}
+
+.material-symbols-outlined {
+    color: #fff; /* Красный цвет */
+    font-size: 40px; /* Установите размер иконки по вашему выбору */
+    vertical-align: middle; /* Выравнивание иконки по центру, может потребоваться дополнительная настройка */
+}
+.material-symbols-outlined:hover {
+    cursor: pointer;
+    font-size: 40px; /* Размер при наведении. Можете выбрать другой размер. */
+}
+.active{
+     color: #FD5656;
+}
+.linknostyle:hover{
+     color: #FD5656;
+     cursor:pointer;
+}
+
+.submit{
+    margin-top: 20px;
+    padding: 0px 50px;
+    border-radius: 11px;
+    background: #F0F0F0;
+    color: #000;
+    text-align: center;
+    font-family: Rhodium Libre;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.05rem;
+    margin-bottom:40px;
+}
+.hidden{
+    display: none;
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHOTO TO TEXT CONVERTOR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/rhodium-libre" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  </head>
+  <body>
+    <header>
+      <div class="header_wrapper">
+        <div class="header_logo">
+            <div class="header_logo-link">
+              <svg class="logotip" width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="44.5" cy="44.5" r="44.5" fill="black"/>
+                <path d="M18.016 28.016C18.688 28.048 19.568 28.08 20.656 28.112C21.744 28.144 22.816 28.16 23.872 28.16C25.376 28.16 26.816 28.144 28.192 28.112C29.568 28.08 30.544 28.064 31.12 28.064C34.992 28.064 37.888 28.944 39.808 30.704C41.728 32.464 42.688 34.736 42.688 37.52C42.688 38.672 42.496 39.888 42.112 41.168C41.728 42.416 41.056 43.584 40.096 44.672C39.168 45.728 37.888 46.592 36.256 47.264C34.624 47.936 32.56 48.272 30.064 48.272H25.456V47.312H29.584C31.856 47.312 33.584 46.88 34.768 46.016C35.984 45.152 36.8 44.016 37.216 42.608C37.664 41.2 37.888 39.68 37.888 38.048C37.888 35.008 37.28 32.736 36.064 31.232C34.88 29.728 32.832 28.976 29.92 28.976C28.448 28.976 27.488 29.248 27.04 29.792C26.592 30.336 26.368 31.44 26.368 33.104V56.912C26.368 58.064 26.48 58.928 26.704 59.504C26.96 60.08 27.44 60.464 28.144 60.656C28.848 60.848 29.872 60.976 31.216 61.04V62C30.384 61.936 29.328 61.904 28.048 61.904C26.768 61.872 25.472 61.856 24.16 61.856C22.912 61.856 21.744 61.872 20.656 61.904C19.568 61.904 18.688 61.936 18.016 62V61.04C19.104 60.976 19.92 60.848 20.464 60.656C21.04 60.464 21.424 60.08 21.616 59.504C21.808 58.928 21.904 58.064 21.904 56.912V33.104C21.904 31.92 21.808 31.056 21.616 30.512C21.424 29.936 21.04 29.552 20.464 29.36C19.92 29.136 19.104 29.008 18.016 28.976V28.016ZM72.4941 28.016C72.3661 29.232 72.2701 30.416 72.2061 31.568C72.1741 32.688 72.1581 33.552 72.1581 34.16C72.1581 34.928 72.1741 35.648 72.2061 36.32C72.2381 36.992 72.2701 37.584 72.3021 38.096H71.1981C70.9741 35.856 70.6701 34.096 70.2861 32.816C69.9021 31.504 69.2301 30.56 68.2701 29.984C67.3101 29.408 65.8221 29.12 63.8061 29.12H61.2141V56.432C61.2141 57.712 61.3261 58.672 61.5501 59.312C61.8061 59.952 62.2861 60.384 62.9901 60.608C63.6941 60.832 64.7181 60.976 66.0621 61.04V62C65.2301 61.936 64.1741 61.904 62.8941 61.904C61.6141 61.872 60.3181 61.856 59.0061 61.856C57.5661 61.856 56.2061 61.872 54.9261 61.904C53.6781 61.904 52.6701 61.936 51.9021 62V61.04C53.2461 60.976 54.2701 60.832 54.9741 60.608C55.6781 60.384 56.1421 59.952 56.3661 59.312C56.6221 58.672 56.7501 57.712 56.7501 56.432V29.12H54.1581C52.1741 29.12 50.6861 29.408 49.6941 29.984C48.7341 30.56 48.0621 31.504 47.6781 32.816C47.2941 34.096 46.9901 35.856 46.7661 38.096H45.6621C45.7261 37.584 45.7581 36.992 45.7581 36.32C45.7901 35.648 45.8061 34.928 45.8061 34.16C45.8061 33.552 45.7741 32.688 45.7101 31.568C45.6781 30.416 45.5981 29.232 45.4701 28.016C46.8141 28.048 48.2701 28.08 49.8381 28.112C51.4381 28.144 53.0381 28.16 54.6381 28.16C56.2381 28.16 57.6941 28.16 59.0061 28.16C60.3181 28.16 61.7581 28.16 63.3261 28.16C64.9261 28.16 66.5261 28.144 68.1261 28.112C69.7261 28.08 71.1821 28.048 72.4941 28.016Z" fill="white"/>
+                </svg>
+            </div>
+        </div>
+        <ul class="header_list">
+            <li class="header_item">
+                <a href="/" class="header_link">{{ _('HOME') }}</a>
+            </li>
+            <li class="header_item">
+                <a href="/docs" class="header_link">{{ _('DOCS') }}</a>
+            </li>
+            <li class="header_item">
+                <a href="/tryapi" class="header_link">{{ _('API') }}</a>
+            </li>
+            <li class="header_item">
+                <a href="/convertor" class="header_link">{{ _('TRY ONLINE') }}</a>
+            </li>
+
+            {% if not isLogged  %}
+            <li class="header_item">
+                <button onclick="openModal()" class="header_link">
+                    {{ _('LOG IN') }}
+                </button>
+            </li>
+            {% endif %}
+            {% if isLogged == "True" %}
+            <li class="header_item">
+                <button onclick="openModal2()" class="header_link">
+                    {{ _('LOG IN') }}
+                </button>
+            </li>
+            {% endif %}
+        </ul>
+      </div>
+    </header>
+
+    {% if not isLogged  %}
+    <div class="overlay" id="modalOverlay">
+        <cdiv class="modal" id="modalwin">
+            <span class="modal-close" onclick="closeModal()">
+                <span class="material-symbols-outlined" style="font-size:40px;">
+                    close
+                </span>
+            </span>
+            <h2 class="Welcome whiteColor noselect"><span class="linknostyle active" onclick="closeReg()" id="loginlabel">Log In</span> / <span class="linknostyle" onclick="openReg()" id="registerlabel">Register</span></h2>
+            <!-- LogIN -->
+            <form id="loginform" class="form" action="/login" method="post">
+                <div class="inputform"  id="email">
+                    <span class="material-symbols-outlined noselect" style="font-size:40px;">
+                        mail
+                    </span>
+                    <input class="inputplace" type="text" name="mail" placeholder="Mail" >
+                </div>
+
+                <div class="inputform" >
+                    <span class="material-symbols-outlined noselect" style="font-size:40px;">
+                        password
+                    </span>
+                    <input class="inputplace" type="password" name="password" placeholder="Password" id="passwordInput" required>
+                    <span class="material-symbols-outlined noselect"  onclick="togglePasswordVisibility()"  style="font-size:40px; display: none;" id="eyeopen">
+                        visibility
+                    </span>
+                    <span class="material-symbols-outlined noselect" onclick="togglePasswordVisibility()" style="font-size:40px; " id="eyeclosed">
+                        visibility_off
+                    </span>
+                </div>
+
+                <input class="submit" type="submit" value="Login">
+            </form>
+            <!-- Register -->
+            <form id="registerform" class="form hidden" action="/register" method="post">
+                <div class="inputform" id="name">
+                    <span class="material-symbols-outlined noselect" style="font-size:40px;">
+                        badge
+                    </span>
+                    <input class="inputplace" type="text" name="name" placeholder="Your Name/Surname" >
+                </div>
+                <div class="inputform"  id="emailreg">
+                    <span class="material-symbols-outlined noselect" style="font-size:40px;">
+                        mail
+                    </span>
+                    <input class="inputplace" type="text" name="mail" placeholder="Mail" >
+                </div>
+                <div class="inputform">
+                    <span class="material-symbols-outlined noselect" style="font-size:40px;">
+                        person
+                    </span>
+                    <input class="inputplace" type="text" name="username" placeholder="Username" required>
+                </div>
+                <div class="inputform" >
+                    <span class="material-symbols-outlined noselect" style="font-size:40px;">
+                        password
+                    </span>
+                    <input class="inputplace" type="password" name="password" placeholder="Password" id="passwordInputReg" required>
+                    <span class="material-symbols-outlined noselect"  onclick="togglePasswordVisibilityReg()"  style="font-size:40px; display: none;" id="eyeopenReg">
+                        visibility
+                    </span>
+                    <span class="material-symbols-outlined noselect" onclick="togglePasswordVisibilityReg()" style="font-size:40px; " id="eyeclosedReg">
+                        visibility_off
+                    </span>
+                </div>
+
+                <input class="submit" type="submit" value="Login">
+            </form>
+
+            <!-- Add your modal content here -->
+        </cdiv>
+    </div>
+    {% endif %}
+    {% if isLogged == "True" %}
+    <div class="overlay" id="modalOverlayLogout">
+        <cdiv class="modal" id="modalwin" style="height: 60vh">
+            <span class="modal-close" onclick="closeModal2()">
+                <span class="material-symbols-outlined" style="font-size:40px;">
+                    close
+                </span>
+            </span>
+            <h2 class="Welcome whiteColor noselect">You are logged in!</h2>
+            <img src="{{ url_for('static', filename='proc.gif') }}" alt="error"  style="align-self: center;">
+            <form id="logout" class="form" action="/logout" method="post">
+                <input class="submit" type="submit" value="LogOut">
+            </form>
+        </cdiv>
+    </div>
+    {% endif %}
+    {% if loger == "True"  %}
+    <div class="overlay" id="modalOverlayLogEr" style="display: flex;">
+        <cdiv class="modal" id="modalwin" style="height: 66vh;">
+            <span class="modal-close" onclick="closeModal3()">
+                <span class="material-symbols-outlined" style="font-size:40px;">
+                    close
+                </span>
+            </span>
+            <h2 class="Welcome whiteColor noselect">Log error!</h2>
+            <img src="{{ url_for('static', filename='error.gif') }}" alt="error"  style="text-align: center;">
+        </cdiv>
+    </div>
+    {% endif %}
+    {% if success == "True" %}
+    <div class="overlay" id="modalOverSuc" style="display: flex;">
+        <cdiv class="modal" id="modalwin" style="height: 66vh;">
+            <span class="modal-close" onclick="closeModal4()">
+                <span class="material-symbols-outlined" style="font-size:40px;">
+                    close
+                </span>
+            </span>
+            <h2 class="Welcome whiteColor noselect">Successfully!</h2>
+            <img src="{{ url_for('static', filename='sucsess.gif') }}" alt="error"  style="align-self: center;" width="50%">
+        </cdiv>
+    </div>
+    {% endif %}
+    <main>
+      {% block body %}{% endblock %}
+    </main>
+      {% block script %}{% endblock %}
+  <script>
+        function openModal() {
+            document.getElementById('modalOverlay').style.display = 'flex';
+        }
+        function openModal2() {
+            document.getElementById('modalOverlayLogout').style.display = 'flex';
+        }
+        function closeModal() {
+            document.getElementById('modalOverlay').style.display = 'none';
+        }
+        function closeModal2() {
+            document.getElementById('modalOverlayLogout').style.display = 'none';
+        }
+        function closeModal3() {
+            document.getElementById('modalOverlayLogEr').style.display = 'none';
+        }
+        function closeModal4() {
+            document.getElementById('modalOverSuc').style.display = 'none';
+        }
+
+        function openReg() {
+            document.getElementById('registerform').style.display = 'flex';
+            document.getElementById('loginform').style.display = 'none';
+            document.getElementById('loginlabel').classList.remove('active');
+            document.getElementById('registerlabel').classList.add('active');
+            document.getElementById('modalwin').classList.add('big');
+        }
+        function closeReg() {
+            document.getElementById('registerform').style.display = 'none';
+            document.getElementById('loginform').style.display = 'flex';
+            document.getElementById('name').style.required = false;
+            document.getElementById('email').style.required = false;
+            document.getElementById('loginlabel').classList.add('active');
+            document.getElementById('registerlabel').classList.remove('active');
+            document.getElementById('modalwin').classList.remove('big');
+        }
+         function togglePasswordVisibility() {
+            var passwordInput = document.getElementById("passwordInput");
+
+            if (passwordInput.type === "password") {
+                document.getElementById('eyeopen').style.display = 'flex';
+                document.getElementById('eyeclosed').style.display = 'none';
+                passwordInput.type = "text";
+            } else {
+                document.getElementById('eyeclosed').style.display = 'flex';
+                document.getElementById('eyeopen').style.display = 'none';
+                passwordInput.type = "password";
+            }
+        }
+        function togglePasswordVisibilityReg() {
+            var passwordInput = document.getElementById("passwordInputReg");
+
+            if (passwordInput.type === "password") {
+                document.getElementById('eyeopenReg').style.display = 'flex';
+                document.getElementById('eyeclosedReg').style.display = 'none';
+                passwordInput.type = "text";
+            } else {
+                document.getElementById('eyeclosedReg').style.display = 'flex';
+                document.getElementById('eyeopenReg').style.display = 'none';
+                passwordInput.type = "password";
+            }
+        }
+   </script>
+  </body>
+</html>
